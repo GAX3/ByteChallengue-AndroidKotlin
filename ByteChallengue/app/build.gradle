@@ -15,6 +15,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    buildFeatures{
+        viewBinding = true
+    }
 
     buildTypes {
         release {
@@ -62,4 +65,9 @@ dependencies {
 
     //Recyclerview
     implementation("androidx.recyclerview:recyclerview:1.2.1")
+
+    //Espresso
+    androidTestImplementation "androidx.test:runner:1.4.0"
+    androidTestImplementation "androidx.test:core:1.4.0"
+    androidTestImplementation "androidx.test.ext:junit-ktx:1.1.3"
 }
